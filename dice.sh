@@ -20,7 +20,7 @@ then
 elif [ $# -eq 1 ]   # if one argument, just roll one die that big
 then
   printf "Rolling 1d"$1"\n"
-  printf "  Result: "$((1 + $RANDOM % $1 ))
+  printf "  Result: "$((1 + $RANDOM % $1 ))"\n"
   exit 0
 elif [ $(($# % 2)) -eq 1 ]
 then
